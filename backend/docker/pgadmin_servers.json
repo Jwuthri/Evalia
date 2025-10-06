@@ -1,0 +1,14 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "Evalia Development",
+      "Group": "Development",
+      "Host": "postgres-dev",
+      "Port": 5432,
+      "MaintenanceDB": "evalia_dev",
+      "Username": "postgres",
+      "PassFile": "/pgpass",
+      "SSLMode": "prefer"
+    }
+  }
+}

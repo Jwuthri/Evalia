@@ -1,8 +1,8 @@
-# 🧠 Evalia — The Intelligence Layer for Prompt Evaluation
+# 🧠 Evalia — The Intelligence Layer for Prompt Evaluation & Security
 
-> **Where prompts meet proof.** Intelligent platform for evaluating, benchmarking, and improving large language model (LLM) prompts — automatically, continuously, and contextually.
+> **Where prompts meet proof and security meets compliance.** Intelligent platform for evaluating, benchmarking, and securing large language model (LLM) applications — from performance optimization to SOC2 compliance.
 
-Evalia empowers AI engineers, researchers, and product teams to understand how their prompts perform across tasks, domains, and models — with built-in analytics, adaptive datasets, and LLM-based evaluation.
+Evalia empowers AI engineers, security teams, and compliance officers to build better and safer LLM applications. Evaluate prompt performance across tasks, domains, and models — then validate security with automated penetration testing and compliance checks.
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-00a393?style=flat&logo=fastapi)](https://fastapi.tiangolo.com)
 [![Next.js](https://img.shields.io/badge/Next.js-14+-black?style=flat&logo=next.js)](https://nextjs.org)
@@ -10,12 +10,14 @@ Evalia empowers AI engineers, researchers, and product teams to understand how t
 [![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4-412991?style=flat&logo=openai)](https://openai.com)
 [![Anthropic](https://img.shields.io/badge/Anthropic-Claude-orange?style=flat)](https://anthropic.com)
 [![Docker](https://img.shields.io/badge/Docker-ready-2496ed?style=flat&logo=docker)](https://www.docker.com)
+[![Security](https://img.shields.io/badge/Security-OWASP%20LLM%20Top%2010-red?style=flat&logo=owasp)](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
+[![Compliance](https://img.shields.io/badge/Compliance-SOC2%20%7C%20ISO27001-green?style=flat&logo=security)](https://www.aicpa.org/soc)
 
 ---
 
 ## 💡 **Why Evalia?**
 
-Building great AI experiences requires **evidence-driven prompt design**. Evalia turns prompt engineering from trial-and-error into a measurable, scientific process — bridging the gap between intuition and performance.
+Building great AI experiences requires **evidence-driven prompt design** and **robust security validation**. Evalia turns prompt engineering from trial-and-error into a measurable, scientific process — while ensuring your LLM applications meet security standards and compliance requirements before reaching production.
 
 ---
 
@@ -34,6 +36,23 @@ Building great AI experiences requires **evidence-driven prompt design**. Evalia
 - **Reasoning & Explanations** for why outputs succeed or fail
 - **Custom Evaluation Criteria** tailored to your specific use cases
 - **Confidence Scoring** and uncertainty quantification
+
+### 🔄 **Intelligent Prompt Optimization**
+
+- **AI-Powered Feedback** — Get actionable suggestions to improve your prompts based on evaluation results
+- **Dataset-Specific Optimization** — Tailored recommendations for your specific use cases and data patterns
+- **Performance Analysis** — Identify weak points, ambiguities, and missing instructions
+- **Iterative Refinement** — Apply suggestions and re-evaluate to measure improvement
+- **Best Practice Recommendations** — Learn prompt engineering patterns that work for your domain
+
+### 📝 **Prompt Version Control**
+
+- **Git-like Versioning** — Track every change to your prompts with full history
+- **Visual Diff Tool** — Side-by-side comparison of prompt versions with highlighted changes
+- **Branching & Merging** — Experiment with prompt variants and merge successful changes
+- **Rollback & Restore** — Revert to previous versions when changes don't improve performance
+- **Change Annotations** — Document why changes were made and their impact on metrics
+- **Collaborative Editing** — Team members can propose, review, and approve prompt changes
 
 ### 🏷️ **Domain-Aware Datasets**
 
@@ -77,6 +96,32 @@ Building great AI experiences requires **evidence-driven prompt design**. Evalia
 - **Cost-Performance Trade-offs** visualization
 - **Latency vs Quality** optimization insights
 
+### 🛡️ **Security Testing & Penetration**
+
+- **Prompt Injection Detection** — Test for jailbreaks, instruction bypasses, and adversarial prompts
+- **Data Exfiltration Prevention** — Detect PII leakage and sensitive information disclosure
+- **Adversarial Attack Simulation** — Run OWASP Top 10 for LLMs and custom attack vectors
+- **Authorization Testing** — Validate role-based access control and permission boundaries
+- **API Endpoint Testing** — Point Evalia at your LLM API with custom authentication
+- **Attack Vector Library** — 100+ pre-built security tests based on real-world exploits
+
+### 🔐 **SOC2 Compliance Validation**
+
+- **Automated Compliance Testing** — Validate SOC2 Trust Service Criteria automatically
+- **Multi-Framework Support** — SOC2, ISO 27001, GDPR, CCPA, HIPAA compliance
+- **Security Controls Auditing** — Verify authentication, authorization, and encryption
+- **Compliance Reporting** — Generate audit-ready reports with evidence and remediation
+- **Continuous Monitoring** — Track compliance score and identify gaps in real-time
+- **Risk Assessment** — CVSS-style vulnerability scoring and risk heat maps
+
+### 🎯 **Multi-Target Testing**
+
+- **Prompt-Based Testing** — Provide system prompts and configurations for testing
+- **API Integration** — Test live endpoints with API keys, OAuth, JWT, or custom auth
+- **CI/CD Integration** — Block deployments that fail security or compliance thresholds
+- **Scheduled Security Scans** — Automated penetration testing on daily/weekly schedules
+- **Webhook Alerts** — Real-time notifications for critical vulnerabilities
+
 ---
 
 ## 🚀 **Use Cases**
@@ -97,6 +142,26 @@ Fine-tuning validation, RAG system optimization, and prompt experimentation for 
 
 Internal tooling for prompt experimentation, A/B testing, and performance monitoring at scale.
 
+### 🔒 **LLM Security Auditing**
+
+Test your LLM applications for security vulnerabilities before attackers do — prompt injection, data leakage, and authorization bypasses.
+
+### 📋 **SOC2 & Compliance Certification**
+
+Achieve and maintain SOC2, ISO 27001, and regulatory compliance for your AI products with automated testing and audit-ready reports.
+
+### 🛡️ **Red Team AI Applications**
+
+Continuous adversarial testing and penetration of your LLM APIs to identify weaknesses and ensure secure deployments.
+
+### 🔄 **Iterative Prompt Engineering**
+
+Get AI-powered feedback on your prompts after every evaluation — learn what works, what doesn't, and how to optimize for your specific dataset and use case.
+
+### 📝 **Prompt Version Control & Collaboration**
+
+Track prompt evolution like code with git-style versioning — compare changes, see performance deltas, rollback when needed, and collaborate with your team on prompt improvements.
+
 ---
 
 ## 🏗️ **Architecture**
@@ -107,7 +172,7 @@ Internal tooling for prompt experimentation, A/B testing, and performance monito
 │   Dashboard     │    │   Backend       │    │   Engine        │
 │                 │    │                 │    │                 │
 │ • React Charts  │    │ • Python 3.11+ │    │ • Multi-Model   │
-│ • Tailwind CSS  │    │ • Async/Await   │    │ • LLM-as-Judge  │
+│ • Security UI   │    │ • Async/Await   │    │ • LLM-as-Judge  │
 │ • TypeScript    │    │ • Pydantic      │    │ • Metrics       │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
          │                       │                       │
@@ -119,6 +184,18 @@ Internal tooling for prompt experimentation, A/B testing, and performance monito
 │ Redis  │ │ Celery │ │ Qdrant │ │   Dataset   │ │PostgreSQL│
 │ Cache  │ │ Queue  │ │Vector  │ │   Storage   │ │ Database │
 └────────┘ └────────┘ └────────┘ └─────────────┘ └──────────┘
+                │
+    ┌───────────┴───────────┐
+    │                       │
+┌───▼────────┐    ┌────────▼─────┐
+│  Security  │    │  Compliance  │
+│  Testing   │    │  Validation  │
+│  Engine    │    │  Engine      │
+│            │    │              │
+│ • Attacks  │    │ • SOC2       │
+│ • Scans    │    │ • ISO 27001  │
+│ • Reports  │    │ • GDPR       │
+└────────────┘    └──────────────┘
 ```
 
 ---
@@ -253,6 +330,136 @@ Evalia supports evaluation across multiple LLM providers:
 - **Synthetic Generation**: AI-generated test cases
 - **Version Control**: Track dataset changes over time
 
+### **Prompt Optimization Workflow**
+
+After each evaluation, Evalia's AI analyzes your results and provides actionable feedback:
+
+**1. Performance Analysis**
+- Identify which test cases failed and why
+- Detect patterns in successful vs unsuccessful responses
+- Analyze response quality across different metrics
+
+**2. AI-Generated Suggestions**
+- **Missing Instructions**: "Add guidance for handling user complaints"
+- **Ambiguous Phrasing**: "Clarify what 'professional tone' means in context X"
+- **Edge Cases**: "Your prompt doesn't handle empty inputs or multi-part questions"
+- **Examples**: "Add few-shot examples for better consistency"
+- **Constraints**: "Define output format and length requirements"
+
+**3. Iterative Refinement**
+- Apply suggestions manually or auto-generate optimized version
+- Re-run evaluation to measure improvement
+- Compare before/after metrics
+- Iterate until target performance achieved
+
+**Example Optimization Feedback:**
+```json
+{
+  "current_score": 7.2,
+  "target_score": 9.0,
+  "gap_analysis": {
+    "accuracy": { "current": 85%, "target": 95%, "priority": "high" },
+    "tone": { "current": 72%, "target": 90%, "priority": "medium" }
+  },
+  "top_suggestions": [
+    {
+      "issue": "30% of responses were too verbose",
+      "suggestion": "Add: 'Keep responses concise (2-3 sentences max)'",
+      "expected_impact": "+15% on tone metric"
+    },
+    {
+      "issue": "Failed edge case: multi-language queries",
+      "suggestion": "Add: 'If query is not in English, politely ask for translation'",
+      "expected_impact": "+8% on accuracy metric"
+    }
+  ],
+  "optimized_prompt": "Your improved prompt with all suggestions applied..."
+}
+```
+
+### **Prompt Version Control**
+
+Track and manage prompt evolution with git-like workflows:
+
+**Version Management**
+- Every change creates a new version (semantic versioning: v1.2.3)
+- Commit messages explain what changed and why
+- Full history preserved for auditing and rollback
+
+**Visual Diff Viewer**
+- Side-by-side comparison of any two versions
+- Highlighted additions, deletions, and modifications
+- Performance delta shows impact of each change
+- Character-level and semantic diff options
+
+**Branching & Experimentation**
+- Create branches to test risky changes
+- Multiple team members can work on different variants
+- Merge successful experiments back to main
+- Automatic conflict detection and resolution
+
+**Collaborative Workflow**
+```
+main branch (production)
+  v1.0.0 → v1.1.0 → v1.2.0
+              ↓
+         [branch: experiment-formal-tone]
+              v1.1.1 → v1.1.2
+                         ↓
+                    [evaluate]
+                         ↓
+                   Performance: +12%
+                         ↓
+                  [merge to main]
+                         ↓
+                      v1.3.0 ✨
+```
+
+**Example Diff Output:**
+```diff
+Version: v1.2.0 → v1.3.0
+Performance Delta: Accuracy +5.2%, Tone +3.1%, Relevance -0.5%
+
+System Prompt Changes:
+  You are a helpful customer support assistant.
+- Be casual and friendly.
++ Always respond in a professional and empathetic tone.
++ Keep responses concise (2-3 sentences maximum).
+
+  When a customer has a complaint:
++ 1. Acknowledge their frustration
++ 2. Offer a concrete solution
++ 3. Provide next steps
+
+- If you don't know the answer, make your best guess.
++ If you don't know the answer, say so and offer to escalate.
+```
+
+### **Security Testing Coverage**
+
+**OWASP LLM Top 10 Vulnerabilities**
+
+Evalia automatically tests for all OWASP LLM Top 10 security risks:
+
+1. **LLM01: Prompt Injection** — Direct and indirect injection attacks
+2. **LLM02: Insecure Output Handling** — XSS, CSRF, and backend exploits via LLM outputs
+3. **LLM03: Training Data Poisoning** — Detection of compromised training data
+4. **LLM04: Model Denial of Service** — Resource exhaustion and availability attacks
+5. **LLM05: Supply Chain Vulnerabilities** — Third-party plugin and model risks
+6. **LLM06: Sensitive Information Disclosure** — PII leakage and data exfiltration
+7. **LLM07: Insecure Plugin Design** — Authorization and input validation in plugins
+8. **LLM08: Excessive Agency** — Privilege escalation and unauthorized actions
+9. **LLM09: Overreliance** — Hallucination detection and factual accuracy
+10. **LLM10: Model Theft** — Intellectual property protection and model extraction
+
+**Additional Security Tests**
+
+- **Jailbreak Detection**: Advanced prompt engineering to bypass safety guardrails
+- **Context Window Attacks**: Token limit exploitation and memory exhaustion
+- **Role Confusion**: System prompt leakage and role boundary violations
+- **Data Leakage**: PII, credentials, and proprietary information exposure
+- **Authorization Bypass**: RBAC and permission boundary testing
+
 ---
 
 ## 📚 **API Endpoints**
@@ -287,6 +494,86 @@ GET /api/v1/evaluations
 
 # Compare prompt performance
 GET /api/v1/evaluations/{evaluation_id}/compare
+
+# Get AI-powered optimization feedback
+GET /api/v1/evaluations/{evaluation_id}/optimize
+{
+  "feedback": {
+    "overall_score": 7.5,
+    "strengths": ["Clear instructions", "Good examples"],
+    "weaknesses": ["Ambiguous edge cases", "Missing tone guidance"],
+    "suggestions": [
+      {
+        "type": "add_instruction",
+        "priority": "high",
+        "description": "Add explicit handling for edge cases X and Y",
+        "example": "When the user asks about..., respond with..."
+      }
+    ],
+    "optimized_prompt": "Your optimized prompt here..."
+  }
+}
+```
+
+### **Prompt Version Control**
+
+```bash
+# Create a new prompt version
+POST /api/v1/prompts/{prompt_id}/versions
+{
+  "content": "Updated prompt content...",
+  "commit_message": "Improved clarity and added examples",
+  "parent_version_id": "v1.2.3"
+}
+
+# Get prompt version history
+GET /api/v1/prompts/{prompt_id}/versions
+
+# Compare two versions (diff)
+GET /api/v1/prompts/{prompt_id}/diff?from=v1.2.3&to=v1.3.0
+{
+  "from_version": "v1.2.3",
+  "to_version": "v1.3.0",
+  "changes": [
+    {
+      "type": "addition",
+      "line": 5,
+      "content": "+ Always respond in a professional tone."
+    },
+    {
+      "type": "deletion",
+      "line": 8,
+      "content": "- Be casual and friendly."
+    }
+  ],
+  "performance_delta": {
+    "accuracy": +5.2,
+    "tone": +3.1,
+    "relevance": -0.5
+  }
+}
+
+# Rollback to previous version
+POST /api/v1/prompts/{prompt_id}/rollback
+{
+  "target_version": "v1.2.3",
+  "reason": "v1.3.0 had worse performance on customer support dataset"
+}
+
+# Create a branch for experimentation
+POST /api/v1/prompts/{prompt_id}/branches
+{
+  "branch_name": "experiment-formal-tone",
+  "base_version": "v1.2.3"
+}
+
+# Merge branch back to main
+POST /api/v1/prompts/{prompt_id}/merge
+{
+  "source_branch": "experiment-formal-tone",
+  "target_branch": "main",
+  "strategy": "auto"
+}
 ```
 
 ### **Dataset Management**
@@ -382,6 +669,81 @@ POST /api/v1/tasks/schedule
 }
 ```
 
+### **Security Testing**
+
+```bash
+# Create a new security scan (prompt-based)
+POST /api/v1/security/scans
+{
+  "name": "ChatBot Security Audit",
+  "target_type": "prompt",
+  "system_prompt": "You are a helpful assistant...",
+  "model": "gpt-4",
+  "attack_vectors": ["prompt_injection", "data_exfiltration", "jailbreak"],
+  "severity_threshold": "medium"
+}
+
+# Create security scan (API-based)
+POST /api/v1/security/scans
+{
+  "name": "Production API Security Test",
+  "target_type": "api",
+  "endpoint_url": "https://api.example.com/chat",
+  "auth_type": "bearer",
+  "auth_credentials": {"token": "your_api_key"},
+  "attack_vectors": ["all"],
+  "compliance_frameworks": ["soc2", "owasp_llm_top10"]
+}
+
+# Get scan results
+GET /api/v1/security/scans/{scan_id}/results
+
+# List all vulnerabilities
+GET /api/v1/security/vulnerabilities?severity=critical&status=open
+
+# Get attack vector library
+GET /api/v1/security/attack-vectors
+
+# Run specific attack test
+POST /api/v1/security/test-attack
+{
+  "attack_vector_id": "prompt_injection_001",
+  "target": "You are a helpful assistant...",
+  "model": "gpt-4"
+}
+```
+
+### **Compliance Validation**
+
+```bash
+# Run SOC2 compliance check
+POST /api/v1/compliance/validate
+{
+  "framework": "soc2_type2",
+  "target_type": "api",
+  "endpoint_url": "https://api.example.com/chat",
+  "auth_type": "api_key",
+  "auth_credentials": {"api_key": "your_key"}
+}
+
+# Get compliance score
+GET /api/v1/compliance/score?framework=soc2
+
+# Generate compliance report
+POST /api/v1/compliance/reports
+{
+  "framework": "soc2_type2",
+  "scan_ids": ["scan_123", "scan_456"],
+  "format": "pdf"
+}
+
+# List compliance frameworks
+GET /api/v1/compliance/frameworks
+
+# Get control validation results
+GET /api/v1/compliance/controls?framework=soc2&status=failing
+```
+
 ---
 
 ## 🔧 **Configuration**
@@ -421,6 +783,33 @@ ENABLE_ASYNC_EVALUATIONS=true
 ENABLE_METRICS=true
 PROMETHEUS_PORT=9090
 LOG_LEVEL=INFO
+
+# Security & Compliance
+ENABLE_SECURITY_TESTING=true
+ENABLE_COMPLIANCE_VALIDATION=true
+OWASP_LLM_TOP10_ENABLED=true
+DEFAULT_ATTACK_SEVERITY_THRESHOLD=medium
+MAX_CONCURRENT_SECURITY_SCANS=3
+SECURITY_SCAN_TIMEOUT=300
+
+# Compliance Frameworks
+SOC2_VALIDATION_ENABLED=true
+ISO27001_VALIDATION_ENABLED=false
+GDPR_CHECKS_ENABLED=true
+HIPAA_CHECKS_ENABLED=false
+
+# Prompt Optimization
+ENABLE_PROMPT_OPTIMIZATION=true
+OPTIMIZATION_MODEL=gpt-4  # Model used for generating optimization suggestions
+AUTO_SUGGEST_ON_EVALUATION=true
+MIN_EVALUATION_SCORE_FOR_SUGGESTIONS=6.0
+
+# Prompt Version Control
+ENABLE_VERSION_CONTROL=true
+DEFAULT_BRANCH=main
+AUTO_VERSION_ON_SAVE=true
+SEMANTIC_VERSIONING=true
+MAX_VERSION_HISTORY=100
 ```
 
 ### **Frontend Settings** (`frontend/.env.local`)
@@ -457,6 +846,8 @@ gunicorn app.main:app -w 4 -k uvicorn.workers.UvicornWorker
 celery -A app.core.celery_app:celery_app worker --queues=evaluations --concurrency=4
 celery -A app.core.celery_app:celery_app worker --queues=datasets --concurrency=2
 celery -A app.core.celery_app:celery_app worker --queues=analytics --concurrency=2
+celery -A app.core.celery_app:celery_app worker --queues=optimization --concurrency=2
+celery -A app.core.celery_app:celery_app worker --queues=security --concurrency=3
 
 # Optional: Start Celery Flower for monitoring
 celery -A app.core.celery_app:celery_app flower --port=5555
@@ -490,23 +881,39 @@ evalia/
 │   │   │   ├── 📄 evaluations.py    # Evaluation endpoints
 │   │   │   ├── 📄 datasets.py       # Dataset management
 │   │   │   ├── 📄 models.py         # Model management
-│   │   │   └── 📄 analytics.py      # Analytics & insights
+│   │   │   ├── 📄 analytics.py      # Analytics & insights
+│   │   │   ├── 📄 prompts.py        # Prompt versioning & management
+│   │   │   ├── 📄 security.py       # Security testing
+│   │   │   └── 📄 compliance.py     # Compliance validation
 │   │   ├── 📁 core/           # Core business logic
 │   │   │   ├── 📁 evaluation/ # Evaluation engine
 │   │   │   ├── 📁 llm/        # Multi-provider LLM integration
 │   │   │   ├── 📁 datasets/   # Dataset management
-│   │   │   └── 📁 analytics/  # Performance analytics
+│   │   │   ├── 📁 analytics/  # Performance analytics
+│   │   │   ├── 📁 optimization/ # Prompt optimization engine
+│   │   │   ├── 📁 versioning/ # Git-like prompt versioning
+│   │   │   ├── 📁 security/   # Security testing engine
+│   │   │   └── 📁 compliance/ # Compliance validation
 │   │   ├── 📁 models/         # Pydantic models
 │   │   │   ├── 📄 evaluation.py     # Evaluation models
 │   │   │   ├── 📄 dataset.py        # Dataset models
-│   │   │   └── 📄 metrics.py        # Metrics models
+│   │   │   ├── 📄 metrics.py        # Metrics models
+│   │   │   ├── 📄 prompt.py         # Prompt & version models
+│   │   │   ├── 📄 security.py       # Security models
+│   │   │   └── 📄 compliance.py     # Compliance models
 │   │   ├── 📁 services/       # Business services
 │   │   │   ├── 📄 evaluation_service.py  # Evaluation logic
 │   │   │   ├── 📄 dataset_service.py     # Dataset operations
-│   │   │   └── 📄 analytics_service.py   # Analytics processing
+│   │   │   ├── 📄 analytics_service.py   # Analytics processing
+│   │   │   ├── 📄 optimization_service.py # Prompt optimization
+│   │   │   ├── 📄 version_control_service.py # Prompt versioning
+│   │   │   ├── 📄 security_service.py    # Security testing
+│   │   │   └── 📄 compliance_service.py  # Compliance checks
 │   │   ├── 📁 tasks/          # Celery background tasks
 │   │   │   ├── 📄 evaluation_tasks.py    # Async evaluations
-│   │   │   └── 📄 dataset_tasks.py       # Dataset processing
+│   │   │   ├── 📄 dataset_tasks.py       # Dataset processing
+│   │   │   ├── 📄 security_tasks.py      # Security scanning
+│   │   │   └── 📄 optimization_tasks.py  # Prompt optimization
 │   │   └── 📁 utils/          # Utilities
 │   ├── 📁 docker/             # Docker configurations
 │   ├── 📁 scripts/            # Deployment scripts
@@ -518,15 +925,25 @@ evalia/
 │   │   │   ├── 📁 evaluations/      # Evaluation pages
 │   │   │   ├── 📁 datasets/         # Dataset management
 │   │   │   ├── 📁 analytics/        # Analytics dashboard
-│   │   │   └── 📁 models/           # Model comparison
+│   │   │   ├── 📁 models/           # Model comparison
+│   │   │   ├── 📁 prompts/          # Prompt versioning & editor
+│   │   │   ├── 📁 security/         # Security testing
+│   │   │   └── 📁 compliance/       # Compliance dashboard
 │   │   ├── 📁 components/     # React components
 │   │   │   ├── 📁 ui/         # Base UI components
 │   │   │   ├── 📁 charts/     # Data visualization
 │   │   │   ├── 📁 evaluation/ # Evaluation components
-│   │   │   └── 📁 datasets/   # Dataset components
+│   │   │   ├── 📁 datasets/   # Dataset components
+│   │   │   ├── 📁 prompts/    # Prompt editor & diff viewer
+│   │   │   ├── 📁 optimization/ # Optimization feedback UI
+│   │   │   ├── 📁 security/   # Security scan results
+│   │   │   └── 📁 compliance/ # Compliance reports
 │   │   ├── 📁 hooks/          # Custom React hooks
 │   │   │   ├── 📄 use-evaluations.ts # Evaluation hooks
-│   │   │   └── 📄 use-analytics.ts   # Analytics hooks
+│   │   │   ├── 📄 use-analytics.ts   # Analytics hooks
+│   │   │   ├── 📄 use-prompts.ts     # Prompt versioning hooks
+│   │   │   ├── 📄 use-optimization.ts # Optimization hooks
+│   │   │   └── 📄 use-security.ts    # Security testing hooks
 │   │   ├── 📁 lib/            # Utilities & API client
 │   │   └── 📁 types/          # TypeScript definitions
 │   └── 📄 package.json       # Node.js dependencies
@@ -586,6 +1003,11 @@ uv run alembic upgrade head
 - **Model Health**: `GET /api/v1/models/health`
 - **Vector DB Health**: `GET /api/v1/datasets/health`
 - **Cost Tracking**: `GET /api/v1/analytics/costs`
+- **Security Scan Status**: `GET /api/v1/security/status`
+- **Compliance Score**: `GET /api/v1/compliance/score`
+- **Vulnerability Dashboard**: `GET /api/v1/security/dashboard`
+- **Optimization Service**: `GET /api/v1/optimization/health`
+- **Version Control**: `GET /api/v1/prompts/stats`
 
 ---
 
@@ -688,22 +1110,24 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## ✨ **Taglines**
 
-> **"Evalia — Where prompts meet proof."**
+> **"Evalia — Where prompts meet proof and security meets compliance."**
 
-> **"Smarter prompt engineering through data."**
+> **"Smarter prompt engineering through data, secure AI through validation."**
 
-> **"Benchmark, optimize, and evolve your prompts."**
+> **"Benchmark, optimize, and secure your LLM applications."**
 
-> **"The evaluation layer for AI systems."**
+> **"The evaluation and security layer for AI systems."**
+
+> **"Build better AI. Ship it securely."**
 
 ---
 
 <div align="center">
 
-**Built with ❤️ for the AI engineering community**
+**Built with ❤️ for the AI engineering and security community**
 
 [🧠 OpenAI](https://openai.com) • [🤖 Anthropic](https://anthropic.com) • [⚡ FastAPI](https://fastapi.tiangolo.com) • [⚛️ Next.js](https://nextjs.org) • [🔍 Qdrant](https://qdrant.tech)
 
-**Transform your prompt engineering from trial-and-error into a measurable, scientific process.**
+**Transform your prompt engineering from trial-and-error into a measurable, scientific process — while ensuring your LLM applications meet enterprise security and compliance standards.**
 
 </div>

@@ -1,4 +1,5 @@
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+// Use empty string to make relative requests that get proxied via Next.js rewrites
+const API_BASE_URL = ''
 
 export interface ChatRequest {
   message: string

@@ -1,11 +1,14 @@
 'use client'
 
 import React from 'react'
+import { SignInButton, UserButton, useUser } from '@clerk/nextjs'
 import { motion } from 'framer-motion'
 import { MessageCircle, Code, Zap } from 'lucide-react'
 import Link from 'next/link'
 
 export default function HomePage() {
+  const { isSignedIn, user } = useUser()
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-950 via-blue-950 to-purple-950">
       {/* Navigation */}
@@ -13,11 +16,17 @@ export default function HomePage() {
         <div className="text-white font-bold tracking-wider">
           AI Agent App
         </div>
-        <Link href="/chat">
-          <button className="text-white/80 hover:text-white transition-colors">
-            Go to Chat
-          </button>
-        </Link>
+        <div>
+          {isSignedIn ? (
+            <UserButton afterSignOutUrl="/" />
+          ) : (
+            <SignInButton mode="modal">
+              <button className="text-white/80 hover:text-white transition-colors">
+                Sign In
+              </button>
+            </SignInButton>
+          )}
+        </div>
       </nav>
 
       <div className="container mx-auto px-6 py-16">
@@ -66,18 +75,33 @@ export default function HomePage() {
           </motion.div>
 
           {/* Get Started Button */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="mb-16"
-          >
-            <Link href="/chat">
-              <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-medium rounded-lg transition-all duration-200 hover:scale-105 text-lg">
-                Start Chatting →
-              </button>
-            </Link>
-          </motion.div>
+          {isSignedIn ? (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="mb-16"
+            >
+              <Link href="/chat">
+                <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-medium rounded-lg transition-all duration-200 hover:scale-105 text-lg">
+                  Start Chatting →
+                </button>
+              </Link>
+            </motion.div>
+          ) : (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="mb-16"
+            >
+              <SignInButton mode="modal">
+                <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-medium rounded-lg transition-all duration-200 hover:scale-105 text-lg">
+                  Sign In to Start Chatting →
+                </button>
+              </SignInButton>
+            </motion.div>
+          )}
         </div>
 
         {/* Features */}

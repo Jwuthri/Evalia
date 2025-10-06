@@ -2,7 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import { ClerkProvider } from "@clerk/nextjs";
+// import { ClerkProvider } from "@clerk/nextjs";
 import { ChatProvider } from "@/components/providers/chat-provider";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { ToastProvider } from "@/components/providers/toast-provider";
@@ -14,8 +14,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "AI Agent App",
-  description: "A FastAPI + Next.js AI agent application",
+  title: "Evalia - Prompt Evaluation Platform",
+  description: "Intelligent platform for evaluating, benchmarking, and improving LLM prompts",
 };
 
 export default function RootLayout({
@@ -24,7 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider>
+    // Temporarily disabled ClerkProvider until valid keys are configured
+    // <ClerkProvider>
       <html lang="en" className="dark">
         <body
           className={`${inter.className} ${spaceGrotesk.variable} bg-gray-950 text-white antialiased`}
@@ -36,6 +37,6 @@ export default function RootLayout({
           </ThemeProvider>
         </body>
       </html>
-    </ClerkProvider>
+    // </ClerkProvider>
   );
 }
